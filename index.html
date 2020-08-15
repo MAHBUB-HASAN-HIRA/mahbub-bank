@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahbub Bank</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet"> <!--Google Font-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!--font awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><!--Bootstrap-->
+    <link rel="stylesheet" href="style.css"><!-- Custom CSS-->
+</head>
+<body>
+    <!-- header Area-->
+    <header>
+            <h1 id="wel">Welcome TO Mahbub Bank</h1>  
+    </header>
+
+   <!-- Login Area-->
+
+    <section id="login-panel" class="container">
+
+        <div class="time-zone">
+            <h6><strong> Date and Time: </strong><span id="time"></span></h6>
+        </div>
+
+        <div  class="register-area">
+            <h2>Please Register wth your Info</h2>
+            <form action="#">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" id="nameInput" class="form-control" placeholder="Name" name="name" aria-label="Username" aria-describedby="basic-addon1" required>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <input type="email" name="email" id="emailInput" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                    <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                    </div>
+                    <input type="password" id="passInput" class="form-control" placeholder="password" aria-label="Username" aria-describedby="basic-addon1" required>
+                </div>
+                <button class=" reset_btn " type="reset">Reset</button>            
+            </form>
+            
+            <button class="btn btn-success register-btn">Register</button>
+
+        </div>
+    
+    </section>
+
+   <!-- Login Area End-->
+
+
+<!------------   balance_history section    ---------------->
+
+    <section class="container balance_section">
+            <div class="balance_history">
+                <h3>Balance History</h3>
+            </div>
+
+            <div class="time-zone d-flex justify-content-between">
+            <button class="btn btn-primary back-btn">Go To Login Page</button>
+            <h6><strong>Date and Time: </strong><span id="balance_time"></span></h6>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>Name : <span  class="show_name" id="name"></span></h2>
+                <h2>E-mail: <span class="show_name"  id="email"></span></h2>
+            </div>
+        <hr>
+
+        <!-------    Deposit-Balance, withdraw-Balance, Total-Balance  Area    ------->
+
+        <div class="d-flex justify-content-between ">
+            <div class="card text-white bg-info mb-3 " style="max-width: 18rem;">
+                <div class="card-header">Deposit Balance</div>
+                <div class="card-body">
+                <h4 class="card-title ">$ <span class="deposit_title">00</span></h4>
+                </div>
+            </div>
+
+            <div class="card text-white bg-danger mb-3 " style="max-width: 18rem;">
+                <div class="card-header">Withdraw Balance</div>
+                <div class="card-body">
+                    <h4 class="card-title ">$ <span class="withdraw_title">00</span></h4>
+                </div>
+            </div>
+            
+            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Total Balance</div>
+                <div class="card-body">
+                    <h4 class="card-title ">$ <span class="balance_title">1200</span></h4>
+                </div>
+            </div>
+        </div>
+        <!-------    Deposit-Balance, withdraw-Balance, Total-Balance  Area  End   ------->
+
+       
+       <!-- ----------   deposit Area   -------------- -->
+
+        <div class="row d-flex justify-content-between">
+                <div class="deposit-area bg-info ">
+                    <div class="text-white mb-3" style="max-width: 19rem;">  
+                        <h3>Deposit</h3>              
+                        <input type="number" id="deposit_input" placeholder="Type Your Deposit Money">
+                        <br><button class="btn btn-primary" id="deposit_btm">Deposit</button>
+                    </div>
+                </div>
+
+                <div class="deposit-area bg-danger ">
+                    <div class="text-white mb-3" style="max-width: 19rem;">  
+                        <h3>Withdraw</h3>              
+                        <input type="number" id="withdraw_input" placeholder="Type Your Withdraw Money">
+                        <br><button class="btn btn-primary" id="withdraw_btm">Withdraw</button>
+                    </div>
+            </div>
+        </div>
+       
+       <!-- ----------   deposit Area End  -------------- -->
+
+       <!-- ----------   footer Area   -------------- -->
+       <div class="container footer row">
+        <div class="social_img col-sm-12 col-md-5 col-lg-7">
+            <a href="https://www.facebook.com/mahbub.hasanhira/" target="_blank"><img src="img/facebook (2).png" alt="facebook"></a>
+            <a href="https://www.instagram.com/mahbubhasanhira/" target="_blank"><img src="img/instagram (1).png" alt="instagram"></a>
+            <a href="https://twitter.com/MahbubHasanHira" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
+            <a href="https://www.linkedin.com/in/mahbubhasanhira/" target="_blank"><img src="img/linkedin (1).png" alt="linkedin"></a>
+            <a href="https://github.com/MAHBUB-HASAN-HIRA" target="_blank"><img src="img/github-sign.png" alt="github"></a>
+        </div>
+        
+        <div class="footer_text col-sm-12 col-md-5 col-lg-5">
+            <h5>Developed with love by <span> Mahbub Hasan Hira</span></h5>
+            <h6>© 2020 All right reserved</h6>
+        </div>
+    </div>
+
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
