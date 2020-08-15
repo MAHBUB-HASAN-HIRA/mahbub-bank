@@ -72,22 +72,26 @@ header{
     color: gray;
 }
 .card{
-    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .card div{
     font-size: 20px;
-color: rgb(0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 
 /*-- ----------   deposit Area   -------------- -- */
 
 .deposit-area{
-    width:45%;
+    width: 90%;
     padding:40px 60px;
     border: 1.2px solid gray;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -110,9 +114,6 @@ color: rgb(0, 0, 0) !important;
     border: 1.2px solid gray;
     border-radius: 7px;
 }
-
-    
-
 
 
 /* ---------    footer Area ------------ */
@@ -144,4 +145,13 @@ color: rgb(0, 0, 0) !important;
 }
 .footer_text h6{
     font-size: 15px;
+}
+
+@media screen and (max-width: 992px){
+    .card{
+        margin-top: 15px;
+    }
+    .social_img a img{
+       margin: 5px 2px;
+}
 }
